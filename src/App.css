@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.box {
+  width: 250px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+.box span.gdrx {
+  padding: 6px 14px;
+  background: green;
+  border-radius: 8px;
+  color: #fff;
+  margin-right: 10px;
+}
+.box span.cms {
+  padding: 6px 14px;
+  background: blue;
+  border-radius: 8px;
+  color: #fff;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+.order {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+.order span {
+  padding: 10px;
+  width: 80px;
+  margin-right: 10px;
+  background: #00f;
+  border-radius: 8px;
+  color: #fff;
+}
+.order span:first-child {
+  background: #008000;
+}

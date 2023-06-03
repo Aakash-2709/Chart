@@ -1,0 +1,42 @@
+[
+    {
+        "Orderdate": "2023-05-1",
+        "OrderCount": "12"
+    },
+    {
+        "Orderdate": "2023-05-4",
+        "OrderCount": "1"
+    },
+    {
+        "Orderdate": "2023-05-8",
+        "OrderCount": "2"
+    },
+    {
+        "Orderdate": "2023-05-10",
+        "OrderCount": "1"
+    },
+    {
+        "Orderdate": "2023-05-17",
+        "OrderCount": "3"
+    },
+    {
+        "Orderdate": "2023-05-19",
+        "OrderCount": "1"
+    },
+    {
+        "Orderdate": "2023-05-21",
+        "OrderCount": "20"
+    },
+    {
+        "Orderdate": "2023-05-23",
+        "OrderCount": "17"
+    },
+    {
+        "Orderdate": "2023-05-25",
+        "OrderCount": "4"
+    },
+    {
+        "Orderdate": "2023-05-28",
+        "OrderCount": "2"
+    }
+]
