@@ -60,7 +60,7 @@
 .order {
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  width: 217px;
 }
 .order span {
   padding: 10px;
@@ -72,4 +72,43 @@
 }
 .order span:first-child {
   background: #008000;
+}
+.total {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main-color {
+  display: flex;
+  align-items: center;
+}
+.main-color span.cms {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: #008000;
+  margin-left: 5px;
+}
+.main-color span.gdrx {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: #0000ff;
+  margin-left: 5px;
+}
+span.loginBtn {
+  position: absolute;
+  right: 4%;
+  top: 12px;
+  cursor: pointer;
+  background: red;
+  padding: 5px 8px;
+  border-radius: 10px;
+  color: #fff;
+}
+.login form{
+  padding: 20px 20px 30px;
+  background: #e3e3e3;
+  border-radius: 10px;
 }
