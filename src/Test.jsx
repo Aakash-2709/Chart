@@ -50,7 +50,7 @@ const Test = () => {
           <div className="main-color">CMS <span className='cms'></span></div>
           <div className="main-color">GDRX <span className='gdrx'></span></div>
         </div>
-        <p style={{ margin: "0" }}><strong>total Order : {total}</strong></p>
+        <p style={{ margin: "0" }}><strong>total Number : {total}</strong></p>
       </div>
       <div className="container">
         {
