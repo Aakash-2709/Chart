@@ -8,7 +8,7 @@ const Login = () => {
     const [password, setPassword] = useState("");
     const handalSubmit = (e) => {
         e.preventDefault();
-        if ((userId === "test" && password === "test") || (userId === "admin" && password === "pass")) {
+        if ((userId === "authorType" && password === "DM!sW5yqC9^5")) {
             setLogin(true)
         } else {
             setLogin(false)
