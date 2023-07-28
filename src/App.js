@@ -10,7 +10,7 @@ function App() {
     <div className="wrapper">
       <BrowserRouter>
         <Container className="d-block">
-          <h1 className='text-center'>Order Chart</h1>
+          <h1 className='text-center'>Numbers</h1>
           <Routes>
             <Route path="/" element={<Login />} />
             {/* <Route path="/product" element={<ProductDetail />} /> */}
