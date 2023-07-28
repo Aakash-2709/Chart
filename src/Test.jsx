@@ -39,7 +39,7 @@ const Test = () => {
   return (
     <>
       <div className="header">
-        <h1>Order</h1>
+        <h1>Numbers</h1>
         <div className="order">
           <span>CMS: {totalCmsOr}</span>
           <span style={{ margin: "0" }}>GDRX: {totalGdrxOr}</span>
