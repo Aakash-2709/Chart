@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import OrderTab from './tab';
 
 const Test = () => {
 
@@ -34,8 +35,8 @@ const Test = () => {
   let totalCmsOr = CmsOreder.reduce((total, value) => {
     return total + +value.OrderCount
   }, 0)
-  const total = totalCmsOr + totalGdrxOr
-
+  const total = totalCmsOr + totalGdrxOr;
+  console.log(CmsOreder);
   return (
     <>
       <div className="header">
@@ -52,7 +53,8 @@ const Test = () => {
         </div>
         <p style={{ margin: "0" }}><strong>total Number : {total}</strong></p>
       </div>
-      <div className="container">
+      <OrderTab props={[CmsOreder, gdrxOrder]} />
+      {/* <div className="container">
         {
           CmsOreder.map((data, index) => (
             <div className="box" key={index}>
@@ -62,7 +64,7 @@ const Test = () => {
             </div>
           ))
         }
-      </div>
+      </div> */}
     </>
   )
 }
