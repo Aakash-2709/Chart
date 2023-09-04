@@ -39,16 +39,16 @@
 }
 .box span.gdrx {
   padding: 6px 14px;
-  background: green;
-  border-radius: 8px;
-  color: #fff;
-  margin-right: 10px;
-}
-.box span.cms {
-  padding: 6px 14px;
   background: blue;
   border-radius: 8px;
   color: #fff;
+}
+.box span.cms {
+  padding: 6px 14px;
+  background:#008000;
+  border-radius: 8px;
+  color: #fff;
+  margin-right: 10px;
 }
 .header {
   display: flex;
@@ -114,4 +114,19 @@ span.loginBtn {
 }
 .container .box:last-child {
     display: none;
+}
+button#noanim-tab-example-tab-total.active {
+  background: #222;
+  color: #fff;
+  font-weight: 550;
+}
+button#noanim-tab-example-tab-cms.active {
+  background: #008000;
+  color: #fff;
+  font-weight: 550;
+}
+button#noanim-tab-example-tab-gdrx.active {
+  background: #00f;
+  color: #fff;
+  font-weight: 550;
 }
