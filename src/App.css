@@ -127,3 +127,6 @@ button#noanim-tab-example-tab-gdrx.active {
   color: #fff;
   font-weight: 550;
 }
+.box:last-child {
+    display: none;
+}
