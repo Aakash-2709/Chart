@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import OrderTab from './tab';
+import React, { useEffect, useState } from "react";
+import OrderTab from "./tab";
 
 const Test = () => {
-
-  const [gdrxOrder, setGdrx] = useState([])
-  const [CmsOreder, setCMS] = useState([])
+  const [gdrxOrder, setGdrx] = useState([]);
+  const [CmsOreder, setCMS] = useState([]);
 
   const getGDRXApiData = async () => {
     const response = await fetch(
@@ -13,6 +12,7 @@ const Test = () => {
 
     // update the state
     setGdrx(response);
+    // console.log(response.reverse());
   };
   const getCMSApiData = async () => {
     const response = await fetch(
@@ -28,30 +28,36 @@ const Test = () => {
     getGDRXApiData();
   }, []);
 
-
   let totalGdrxOr = gdrxOrder.reduce((total, value) => {
-    return total + +value.OrderCount
-  }, 0)
+    return total + +value.OrderCount;
+  }, 0);
   let totalCmsOr = CmsOreder.reduce((total, value) => {
-    return total + +value.OrderCount
-  }, 0)
+    return total + +value.OrderCount;
+  }, 0);
   const total = totalCmsOr + totalGdrxOr;
-  console.log(CmsOreder);
+
   return (
     <>
       <div className="header">
-        <h1>Numbers</h1>
+        <h5>To check accurate data click on individual website's tab</h5>
         <div className="order">
+          <p>Last 30 days Orders</p>
           <span>CMS: {totalCmsOr}</span>
           <span style={{ margin: "0" }}>GDRX: {totalGdrxOr}</span>
         </div>
       </div>
       <div className="total" style={{ fontSize: "18px" }}>
         <div className="color-div">
-          <div className="main-color">CMS <span className='cms'></span></div>
-          <div className="main-color">GDRX <span className='gdrx'></span></div>
+          <div className="main-color">
+            CMS <span className="cms"></span>
+            <div className="main-color">
+              GDRX <span className="gdrx"></span>
+            </div>
+          </div>
         </div>
-        <p style={{ margin: "0" }}><strong>total Number : {total}</strong></p>
+        <p style={{ margin: "0" }}>
+          <strong>Total Numbers : {total}</strong>
+        </p>
       </div>
       <OrderTab props={[CmsOreder, gdrxOrder]} />
       {/* <div className="container">
@@ -66,7 +72,7 @@ const Test = () => {
         }
       </div> */}
     </>
-  )
-}
+  );
+};
 
-export default Test
+export default Test;

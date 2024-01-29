@@ -22,11 +22,13 @@
   color: #61dafb;
 }
 .box {
-  width: 250px;
+  width: 43%;
   border: 1px solid grey;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
+  background: #eee;
+  margin: 10px;
 }
 .container {
   max-width: 1200px;
@@ -45,7 +47,7 @@
 }
 .box span.cms {
   padding: 6px 14px;
-  background:#008000;
+  background: #dd0000;
   border-radius: 8px;
   color: #fff;
   margin-right: 10px;
@@ -54,7 +56,7 @@
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 25px auto 10px;
   align-items: center;
 }
 .order {
@@ -64,14 +66,14 @@
 }
 .order span {
   padding: 10px;
-  width: 80px;
+  width: 100px;
   margin-right: 10px;
   background: #00f;
   border-radius: 8px;
   color: #fff;
 }
 .order span:first-child {
-  background: #008000;
+  background: #dd0000;
 }
 .total {
   max-width: 1200px;
@@ -87,8 +89,9 @@
   display: inline-block;
   height: 20px;
   width: 20px;
-  background: #008000;
+  background: #dd0000;
   margin-left: 5px;
+  margin-right: 20px;
 }
 .main-color span.gdrx {
   display: inline-block;
@@ -107,7 +110,7 @@ span.loginBtn {
   border-radius: 10px;
   color: #fff;
 }
-.login form{
+.login form {
   padding: 20px 20px 30px;
   background: #e3e3e3;
   border-radius: 10px;
@@ -118,7 +121,7 @@ button#noanim-tab-example-tab-total.active {
   font-weight: 550;
 }
 button#noanim-tab-example-tab-cms.active {
-  background: #008000;
+  background: #dd0000;
   color: #fff;
   font-weight: 550;
 }
@@ -128,5 +131,30 @@ button#noanim-tab-example-tab-gdrx.active {
   font-weight: 550;
 }
 .box:last-child {
-    display: none;
+  display: none;
+}
+.graph_container {
+  width: 800px;
+}
+.mb-3 {
+  background-color: #eee;
+}
+.main_head {
+  background: #222222;
+  color: #fff;
+  padding: 5px 0;
+}
+.box-outer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 35%;
+}
+.graph-outer {
+  width: 63%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.box_individual {
+  width: 250px;
 }
