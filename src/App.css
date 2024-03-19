@@ -116,9 +116,9 @@ button#noanim-tab-example-tab-gdrx.active{
   color:#fff;
   font-weight:550;
 }
-.box:last-child{
+/*box:last-child{
   display:none;
-}
+}*/
 .graph_container{
   width:800px;
 }
