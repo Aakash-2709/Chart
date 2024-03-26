@@ -39,7 +39,7 @@ const Test = () => {
   return (
     <>
       <div className="header">
-        <h5>To check accurate data click on individual website's tab</h5>
+        {/*<h5>To check accurate data click on individual website's tab</h5>*/}
         <div className="order">
           <p>Last 30 days Orders</p>
           <span>CMS: {totalCmsOr}</span>
