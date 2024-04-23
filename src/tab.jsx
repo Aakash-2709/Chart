@@ -8,6 +8,12 @@ const OrderTab = ({ props }) => {
   const reversedArrayGDRX = [...gdrx].reverse();
   const reversedArrayCMS = [...cms].reverse();
 
+ const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    const options = { day: "numeric", month: "long", year: "numeric" };
+    return date.toLocaleDateString("en-US", options);
+  };
+
   const label_cms = cms.map((item) => item.Orderdate);
   const data_cms = cms.map((item) => item.OrderCount);
 
@@ -66,7 +72,22 @@ const OrderTab = ({ props }) => {
       <Tab eventKey="total" title="TOTAL">
         <div className="container">
           <div className="box-outer">
-            {reversedArrayCMS.map((data, index) => (
+  {reversedArrayCMS.map((cmsData, index) => {
+              const gdrxData = reversedArrayGDRX.find(
+                (gdrxItem) => gdrxItem.Orderdate === cmsData.Orderdate
+              );
+              return (
+                <div className="box" key={index}>
+                  <p>{formatDate(cmsData.Orderdate)}</p>
+                  <span className="cms">{cmsData.OrderCount}</span>
+                  <span className="gdrx">
+                    {gdrxData ? gdrxData.OrderCount : "-"}
+                  </span>
+                </div>
+              );
+            })}
+
+            {/*  {reversedArrayCMS.map((data, index) => (
               <div className="box" key={index}>
                 <p>{data.Orderdate}</p>
                 <span className="cms">{data.OrderCount}</span>
@@ -74,7 +95,7 @@ const OrderTab = ({ props }) => {
                   {reversedArrayGDRX[index]?.OrderCount}
                 </span>
               </div>
-            ))}
+            ))} */}
           </div>
           <diV className="graph-outer">
             <Line data={dataBoth} />
