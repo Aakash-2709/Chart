@@ -7,7 +7,7 @@ const Test = () => {
 
   const getGDRXApiData = async () => {
     const response = await fetch(
-      //"https://www.goodrxmedicine.com/customreport/index"
+      "https://www.goodrxmedicine.com/customreport/index"
     ).then((response) => response.json());
 
     // update the state
@@ -16,7 +16,7 @@ const Test = () => {
   };
   const getCMSApiData = async () => {
     const response = await fetch(
-      //"https://www.cheapmedicineshop.com/customreport/index"
+      "https://www.cheapmedicineshop.com/customreport/index"
     ).then((response) => response.json());
 
     // update the state
